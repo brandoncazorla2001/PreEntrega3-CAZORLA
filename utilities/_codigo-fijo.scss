@@ -1,0 +1,67 @@
+
+/*** RESET  ***/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/**************** ACA VA LA PARTE DEL HEADER ****************/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-header-footer;
+    padding: 10px 10px 10px 20px;   
+
+    .imagen-logo{
+        height: 90px;
+        border-radius: 30px;        /*LOGO DE SWIPEPAWS*/
+        @include flex;  
+    }
+
+    .header-izquierdo{
+        @include flex;
+    }
+}
+
+
+
+
+/**************** ACA ES LA PARTE DERECHA DEL HEADER ****************/
+
+.header-derecho{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 90px;
+    font-size: 19px;   
+    a{
+        text-decoration: none;
+        color: $color-font;
+    
+        &:hover{
+            color: $color-hover;
+        }
+    }
+   
+}
+
+
+/**************** ACA VA LA PARTE DEL FOOTER ****************/
+footer{
+    background-color: $color-header-footer;
+    text-align: center;
+    font-size: 20px;
+}
+

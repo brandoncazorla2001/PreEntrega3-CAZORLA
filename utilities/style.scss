@@ -1,0 +1,456 @@
+//imports
+
+@import "utilities/variables";
+@import "utilities/codigo-fijo";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+
+
+
+/********* $$$$ COMIENZO INDEX $$$$ *********/
+
+#columna{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.columna-1{
+    margin-left: 8px;
+    margin-right: 8px;
+    @include flex;
+}
+.img-refugio{
+    height: 500px;
+    width: 800px;
+    border-radius: 35px;
+    @include flex;
+}
+.columna-2{
+    @include flex;
+}
+
+section{
+    text-align: justify;
+
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 40px; 
+    }
+
+    p{
+        margin-left: 20px;
+        margin-right: 50px;
+        font-size: 25px;
+    }
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    right: 3%; /* Ajusta este valor según sea necesario */
+    transform: translate(0, -50%);
+    border: none; /* O agrega los estilos de borde que desees */
+    border-radius: 5px; /* O ajusta según tus preferencias */
+    padding: 10px;
+    cursor: pointer;
+    color: #fff; /* Color del icono, ajusta según tu diseño */
+  }
+  
+  .carousel-control-prev {
+    position: absolute;
+    top: 50%;
+    left: 3%; /* Ajusta este valor según sea necesario */
+    transform: translate(0, -50%);
+    border: none; /* O agrega los estilos de borde que desees */
+    border-radius: 5px; /* O ajusta según tus preferencias */
+    padding: 10px;
+    cursor: pointer;
+    color: #fff; /* Color del icono, ajusta según tu diseño */
+  }
+
+/**************** RESPONSIVE DESIGN INDEX  ****************/
+
+@media (max-width:1400px){
+    #columna{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 10px;   
+    }
+    .img-refugio{
+        height: 100%;
+        width: 100%;
+        border-radius: 35px;
+        @include flex;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px; 
+    }
+    p{
+        margin-left: 20px;
+        margin-right: 50px;
+        font-size: 15px;
+    }
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-derecho{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-right: 90px;
+        font-size: 10px;   
+    }
+  
+}
+
+
+/**************** NOSOTROS ****************/
+.informacion-nosotros{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    margin-right: 350px; 
+}
+.info-titulo-1{
+    text-align: justify;
+    @include flex;
+    padding-bottom: 30px;
+    font-size: 23px;
+}
+.info-1{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+.info-titulo-2{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 23px; 
+}
+.info-2{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.info-titulo-3{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 23px;
+}
+.info-3{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+
+
+/**************** RESPONSIVE DESIGN NOSOTROS ****************/
+
+@media (max-width:1400px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-derecho{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-right: 90px;
+        font-size: 10px; 
+    }
+
+}
+@media (max-width:1000px){
+   
+    .informacion-nosotros{
+        flex: 1;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .info-titulo-1{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+    .info-1{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+        font-size: 12px;
+    }
+    .info-titulo-2{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        font-size: 12px; 
+    }
+    .info-2{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    .info-titulo-3{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    
+    .info-3{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+        font-size: 12px;
+    }
+    header{
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-derecho{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-right: 90px;
+        font-size: 10px;   
+    }
+}
+
+
+/**************** TIENDA ****************/
+section{
+    flex: 1;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 55px;
+    margin-bottom: 20px;
+    margin-top: 30px;    
+}
+.grid-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;   
+}
+.productos-img{
+    height: 150px;
+    width: 150px;
+}
+button{
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 5px;
+    height: 25px;
+    font-family: sans-serif;
+    padding: 2px 2px;
+}
+
+/**************** RESPONSIVE DESIGN  ****************/
+@media (max-width:1400px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-derecho{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-right: 90px;
+        font-size: 10px;    
+    }
+}
+
+/**************** NUESTRA MISION ****************/
+section{
+    flex: 1;
+}
+.grid-container-mision{
+    display: grid;
+    max-width: auto;
+    grid-template-columns: 30% 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "izq arr arr"
+    "izq aba der";
+    margin: 15px 15px;
+    gap: 15px;
+    
+        div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }           
+}
+
+.izq{
+    grid-area: izq;
+    size: 100%;
+   
+}
+
+.arr {
+    grid-area: arr;
+    
+}
+
+.aba {
+    grid-area: aba;
+    
+}
+
+.der {
+    grid-area: der;
+    
+}
+
+.SUBRAYADO{
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.seccion{
+    text-align: center;
+    margin: 30px 100px;
+    font-family:sans-serif;
+    
+}
+
+/**************** RESPONSIVE DESIGN NUESTRA MISION ****************/
+
+@media (max-width:1400px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-derecho{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-right: 90px;
+        font-size: 10px; 
+    }
+}
+
+
+@media (max-width:600px){
+    .grid-container-mision{
+        display: grid;
+        max-width: auto;
+        grid-template-columns:  1fr;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+        "izq "
+        "arr"
+        "aba"
+        "der"; 
+        
+            div img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            } 
+    }
+}     
+
+
+
+/**************** CONTACTO ****************/
+section{
+    flex: 1;
+}
+#formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    @extend %boton;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
